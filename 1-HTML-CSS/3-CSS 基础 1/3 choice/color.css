@@ -1,0 +1,32 @@
+
+a[href="#"]{
+    color:red;
+}
+a:link{
+    color:grey;
+}
+a:visited{
+    color:lightcoral;
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color: greenyellow;
+}
+a::before{
+    content:"hi";
+    color:red;
+}
+a::after{
+    content:"ok";
+}
+div>p{
+    font-weight: bold;
+}
+div li.special+li{
+    background-color: lightsalmon;
+}
+ul li.unique~li{
+    background-color: lightseagreen;
+}

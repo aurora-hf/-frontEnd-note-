@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input:focus {
+            outline: 1px solid #008c8c;
+            outline-offset: 0;
+            border:none;
+            /* padding:0 10px; */
+            text-indent: 2em;
+        }
+        input:checked+span{
+            color:#008c8c;
+        }
+        textarea{
+            resize:both;
+        }
+    </style>
+</head>
+
+<body>
+    <p><input type="text" tabindex="2"></p>
+    <p><input type="text" tabindex="1"></p>
+    <p><button>按钮</button></p>
+    <p>
+        性别：
+        <label>
+            <input name="sex" type="radio">
+            <span>男</span>
+        </label>
+        <label>
+            <input name="sex" type="radio">
+            <span>女</span> 
+        </label>
+    </p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>堆叠上下文</title>
+    <style>
+        html{
+            background-color: lightblue;
+        }
+        .container{
+            background-color: lightcoral;
+            width:200px;
+            height: 200px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .container .c1{
+            background-color: lightpink;
+            width:100px;
+            height: 100px;
+            position:relative;
+            z-index: -1;
+            top:-30px;
+            left: -30px;
+        }
+        .container .c2{
+            background-color: lightsalmon;
+            width:100px;
+            height: 100px;
+            position:relative;
+            z-index: -1;
+            top:-120px;
+            left: -30px;
+        }
+        .container .c3{
+            width:100px;
+            height: 100px;
+            background-color: lightgrey;
+            margin-top: -200px;
+        }
+        .container .c4{
+            width:100px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            float: left;
+            margin-top: -50px;
+        }
+        .container .c5{
+            width:100px;
+            height: 100px;
+            background-color: lightseagreen;
+            position: absolute;
+            z-index: 0;
+            margin-top: -10px;
+        }
+        .container .c6{
+            width:100px;
+            height: 100px;
+            background-color:lightsteelblue;
+            position: absolute;
+            z-index: 1;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+        <div class="c6"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    background-color: #4d4a40;
+    padding:20px 0;
+    /* 避免太小样式不美观 */
+    min-width: 1000px;
+    /* max-width: ; */
+}
+.container{
+    background:#fff;
+    width:90%;
+    margin:0 auto;
+    /* 能继承的属性往上提 */
+    line-height: 2 ;
+    padding:30px 0;
+}
+.container header{
+    background:#267890;
+    color:#fff;
+    /* 可继承属性 */
+    text-align: center;
+    /* margin:30px 0;会和article的外边距合并，因为article的上下外边距为0 */
+    border:5px solid #14414e;
+    margin:0 -34px;
+}
+.container header h1{
+    font-size:42px;
+    font-weight: bold;
+}
+.container header .original-link{
+    color:#dbdbdb;
+    margin-bottom: 30px;
+}
+.container header .original-link a{
+    text-decoration: underline;
+}
+.container header .original-link a:hover{
+    color:#fff;
+}
+.container section{
+    width:90%;
+    margin:0 auto;
+}
+.container section p{
+    margin:1em 0;
+}
+.container section h2{
+    font-size: 32px;
+    font-weight: bold;
+    border-top: 1px dotted;
+    border-bottom: 1px dashed;
+}

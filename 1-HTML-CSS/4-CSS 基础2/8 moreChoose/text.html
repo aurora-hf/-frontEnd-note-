@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li:first-child{
+            color:red;
+        }
+        li:first-of-type{
+            color:red;
+        }
+        li:last-child{
+            color:#008c8c;
+        }
+        li:last-of-type{
+            color:#008c8c;
+        }
+        /* li:nth-child(even){
+            color:blue;
+        } */
+        li:nth-of-type(even){
+            color:blue;
+        }
+        li::first-letter{
+            color:lightsalmon;
+        }
+        p::first-line{
+            color:lightsteelblue;
+        }
+        p::selection{
+            color:#fff;
+            background:#008c8c;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <li>Lorem.</li>
+        <li>Sequi?</li>
+        <li>Deserunt!</li>
+        <li>Amet!</li>
+        <li>Quisquam.</li>
+        <li>Dignissimos.</li>
+        <li>Esse!</li>
+        <li>Debitis?</li>
+        <li>Itaque.</li>
+        <li>Laborum.</li>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laboriosam eveniet culpa eos unde modi distinctio expedita blanditiis dolores sapiente! Aut, saepe eveniet! Earum eligendi corrupti hic architecto at esse impedit modi possimus suscipit sit ab officia natus error voluptatum ipsa est inventore, quaerat expedita exercitationem dolor illo, adipisci aliquid! Ea rem explicabo molestias molestiae impedit, quaerat temporibus soluta aliquid repudiandae? Impedit sint explicabo numquam, similique nam et cumque debitis minima repellat recusandae quod blanditiis soluta ex architecto alias sed cupiditate fuga adipisci repellendus unde. Odit, reiciendis accusantium. Ipsa porro, repellendus omnis error tenetur eaque? Assumenda atque deserunt maiores fugiat.</p>
+    </ul>
+</body>
+</html>

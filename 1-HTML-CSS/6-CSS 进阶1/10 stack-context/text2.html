@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>堆叠上下文</title>
+    <style>
+        html{
+            background-color: lightblue;
+        }
+        .container1{
+            background-color: lightcoral;
+            width:200px;
+            height: 200px;
+        }
+        .container2{
+            background-color: lightsalmon;
+            width:200px;
+            height: 200px;
+            margin-left: 50px;
+            margin-top: -150px;
+            position: relative;
+            z-index: 0;
+        }
+        .c1{
+            background-color: lightgray;
+            width:100px;
+            height: 100px;
+            
+        }
+        .c2{
+            background-color: lightpink;
+            width:100px;
+            height: 100px;
+            position: absolute;
+            z-index: -1;
+            margin-left: -50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="c1">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="c2">
+            
+        </div>
+        <div>Lorem, ipsum.</div>
+    </div>
+</body>
+</html>

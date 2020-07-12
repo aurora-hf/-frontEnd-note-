@@ -1,0 +1,72 @@
+.banner{
+    width:520px;
+    height: 340px;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.banner .imgs{
+    width:2080px;
+}
+.banner .imgs a{
+    float: left;
+}
+.banner .imgs img{
+    width:520px;
+    height: 340px;
+}
+.banner .left,
+.banner .right{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    top:0;
+    bottom: 0;
+    margin:auto;
+}
+.banner .left{
+    left:5px;
+}
+.banner .right{
+    right: 5px;
+}
+.banner .left:hover,
+.banner .right:hover{
+    background: #fff;
+    color:red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner .modal{
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    background:rgba(0, 0, 0, .5);
+    bottom: 0;
+    left:0;
+    color:#fff;
+    line-height:40px ;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.banner .modal h2{
+    float: left;
+}
+.banner .modal ul{
+    float: right;
+}
+.banner .modal .dots li{
+   display: inline-block;
+   width:10px;
+   height: 10px;
+   background:#ccc;
+   border-radius: 50%;
+   margin-left: 5px;
+}
+.banner .modal .dots li:hover{
+    background: #fff;
+    cursor: pointer;
+}
